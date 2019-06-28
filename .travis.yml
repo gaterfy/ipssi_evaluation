@@ -6,10 +6,19 @@ cache: npm
 before_install:
   - npm install mocha --save-dev
   - npm install three --save-dev
+  - npm install twly --save-dev
 
 install:
   - npm -g install jshint
+  - npm install -g twly
 
 script:
     - npm test
     - jshint src/
+    - twly src/*.js;
+    - ./node_modules/.bin/retire
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "ab1b98d7-7d52-4b83-9028-1176a9a440e9"
