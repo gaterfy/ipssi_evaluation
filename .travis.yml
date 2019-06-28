@@ -13,4 +13,3 @@ install:
 script:
     - npm test
     - jshint src/
-    - ./node_modules/.bin/retire
