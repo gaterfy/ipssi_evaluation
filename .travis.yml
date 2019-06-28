@@ -15,8 +15,9 @@ script:
 - twly src/*.js;
 - "./node_modules/.bin/retire"
 deploy:
+  on:
+    branch: develop
   provider: heroku
   api_key:
     secure: C6OnGwVAdRmnKDZWvODHJs/4omYEJ9LH7eS6hSvCaMN4/3FWLXkVwkaW+rmDRH64DCzxneEQajo3zd2zeZHHI1pQaY3guGahge6ssQZVPOCLa2YhmJN8DRDXDfHvpkoAkxc4em6ixDTIoeQyog+cyZw8mdhexf2HfHVgF4vVK9oeX6+btB81tpjcc+hRfMhczJbFs4k9uDGVbkbHZzv2hZQlloPSBdjR+1KsRrgfyQ3hlDHoQsVIZo9XzNMHtSXM5UvRqavVGTTV/zHTzeAHSTIyGXtZKZ39cXR4czgrlh5FodnnMXMeVQfLC0Ap1jQkPhFVKBZNL4SwzMs7GbLqshsg0/3QDwn9yLoCnQQkMsWje+yCRfItPP7VzMIFP4p6fNz5RpFnV+l6LWI9oCqMt5OsgwfJnIRjOWEwr20Sax5fyL3r7/ftrqDPNNiWaS/ftVRCHaKhq7nA5QlsgFXBK3rQmKfn58vpn/Aw2MCRQCX+zlTT92F9b7VO8OUifxD9AA2d8Os7QZq/5Ss+SM0ZuBsDTXbYxmLNbKUn7MzOxoMx58mbiiLrl9N6vFaUZpA6sD4OX7pyt9d1m4n+bzm84JgqIAHYxHQV0mVcsVUYTTaOIjfOwEX0GZyTzXav7LSOgG/1HjTDV35TteudI+p8HCf3QjJ80Spth7doCgVx8G4=
-
-  app: IPSSI_Evaluation
+  app: boiling-reef-39878
