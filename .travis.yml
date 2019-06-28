@@ -4,7 +4,6 @@ node_js:
 cache: npm
 
 before_install:
-  - ./node_modules/.bin/retire
   - npm install mocha --save-dev
   - npm install three --save-dev
 
@@ -14,3 +13,4 @@ install:
 script:
     - npm test
     - jshint src/
+    - ./node_modules/.bin/retire
